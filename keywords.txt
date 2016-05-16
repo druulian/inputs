@@ -1,0 +1,37 @@
+#######################################
+# Syntax Coloring Map For Buttons
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+Buttons		KEYWORD1
+Toggle	KEYWORD1
+btnState	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+setDebounceTime	KEYWORD2
+setFilterTime	KEYWORD2
+setShortPressDuration	KEYWORD2
+setMidPressDuration	KEYWORD2
+getState	KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+
+FREE	LITERAL1
+PUSHED	LITERAL1
+HOLD	LITERAL1
+RELEASE	LITERAL1
+SHORTPASS	LITERAL1
+LONGHOLD	LITERAL1
+LONGRELEASE	LITERAL1
+LONGPASS	LITERAL1
+EXTRALONGHOLD	LITERAL1
+EXTRALONGRELEASE	LITERAL1
+
