@@ -1,13 +1,15 @@
 #######################################
-# Syntax Coloring Map For Buttons
+# Syntax Coloring Map For Inputs
 #######################################
 
 #######################################
 # Datatypes (KEYWORD1)
 #######################################
 
-Buttons		KEYWORD1
+Button		KEYWORD1
 Toggle	KEYWORD1
+Trigger	KEYWORD1
+Switch	KEYWORD1
 btnState	KEYWORD1
 
 #######################################

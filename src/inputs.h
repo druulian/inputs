@@ -12,7 +12,7 @@
 enum stateT
 {
   FREE,  // button is not pressed
-  PUSHED,  // first encounter of pushed button, appear once per getState() invoke
+  PUSH,  // first encounter of pushed button, appear once per getState() invoke
   HOLD,  // button will maintain this state when pressed shorter than longPressDuration ms 
   RELEASE,  // appear once if button is released before longPressDuration ms are passed
   SHORTPASS,  // we still hold the button, longPressDuration ms has passed just now, appear once
@@ -72,7 +72,7 @@ public:
 class Trigger : public Button
 {
 public:
-  Trigger(int pinNumber, bool detectRelease = true, int inType = INPUT_PULLUP);
+  Trigger(int pinNumber, int inType = INPUT_PULLUP);
 };
 
 class Toggle : public Button

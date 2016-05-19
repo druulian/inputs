@@ -26,7 +26,7 @@ Switch::Switch(int pinNumber, int inType) : Button(pinNumber, SWITCH, inType)
 {
 }
 
-Trigger::Trigger(int pinNumber, bool detectRelease, int inType) : Button(pinNumber, TRIGGER, inType)
+Trigger::Trigger(int pinNumber,  int inType) : Button(pinNumber, TRIGGER, inType)
 {
 }
 
@@ -62,7 +62,7 @@ stateT Button::getState()
   {
     pressTime = millis() - filterTime;
     pushNum++;
-    state = PUSHED;
+    state = PUSH;
   }
 
   else if (pressState && prevPressState)
@@ -121,19 +121,19 @@ stateT Button::getState()
     if (state == FREE || state == RELEASE || state == LONGRELEASE || state == EXTRALONGRELEASE)
       return FREE;
     else
-      return PUSHED;
+      return PUSH;
     break;
   case TRIGGER:
-    if (state == PUSHED)
-      return PUSHED;
+    if (state == PUSH)
+      return PUSH;
     else if (state == RELEASE || state == LONGRELEASE || state == EXTRALONGRELEASE)
       return RELEASE;
     else
       return FREE;
     break;
   case TRIGGER_W_RELEASE:
-    if (state == PUSHED)
-      return PUSHED;
+    if (state == PUSH)
+      return PUSH;
     else if (state == RELEASE || state == LONGRELEASE || state == EXTRALONGRELEASE)
       return RELEASE;
     else
@@ -141,7 +141,7 @@ stateT Button::getState()
     break;
   case TOGGLE:
     if (pushNum % numStates)
-      return PUSHED;
+      return PUSH;
     else
       return FREE;
     break;
