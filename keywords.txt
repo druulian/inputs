@@ -6,7 +6,7 @@
 # Datatypes (KEYWORD1)
 #######################################
 
-Button		KEYWORD1
+Button	KEYWORD1
 Toggle	KEYWORD1
 Trigger	KEYWORD1
 Switch	KEYWORD1
