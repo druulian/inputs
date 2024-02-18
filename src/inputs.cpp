@@ -6,7 +6,6 @@
 
 Button::Button(int pinNumber, timeT timeType, int inputType)
 {
-  Serial.begin(9600);
   pin = pinNumber;
   pinMode(pin, inputType);
   Button::filterTime = 20;
