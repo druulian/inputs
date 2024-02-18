@@ -41,8 +41,8 @@ protected:
   bool filter(int pin);
   bool prevIn, position;
   long pushNum;
-  int numStates;
 public:
+  int numStates;
   long filterTime;
   long longPressDuration;
   long extraLongPressDuration;
